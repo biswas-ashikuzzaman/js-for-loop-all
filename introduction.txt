@@ -1,0 +1,114 @@
+🌀 Introduction to for Loop in JavaScript
+A for loop is used to execute a block of code a specific number of times. It’s one of the most common loop structures in JavaScript.
+
+🔹 Basic for Loop Syntax
+javascript
+Copy
+Edit
+for (initialization; condition; increment/decrement) {
+  // Code to run each time the loop runs
+}
+🔸 Parts of the Loop:
+Initialization – A variable is initialized (usually a counter).
+
+Condition – The loop runs as long as this is true.
+
+Increment/Decrement – Updates the counter after each loop iteration.
+
+✅ Example 1: Basic for Loop
+javascript
+Copy
+Edit
+for (let i = 1; i <= 5; i++) {
+  console.log("Count: " + i);
+}
+Output:
+
+makefile
+Copy
+Edit
+Count: 1
+Count: 2
+Count: 3
+Count: 4
+Count: 5
+📘 Types of for Loops in JavaScript
+1. 🔹 Classic for loop
+The one you've seen above. Used for precise control of loop execution.
+
+2. 🔹 for...of loop
+Used to iterate over arrays or strings (iterable objects).
+
+javascript
+Copy
+Edit
+const colors = ["Red", "Green", "Blue"];
+
+for (const color of colors) {
+  console.log(color);
+}
+Output:
+
+mathematica
+Copy
+Edit
+Red
+Green
+Blue
+3. 🔹 for...in loop
+Used to iterate over object properties (keys).
+
+javascript
+Copy
+Edit
+const person = { name: "John", age: 25, city: "New York" };
+
+for (const key in person) {
+  console.log(key + ": " + person[key]);
+}
+Output:
+
+vbnet
+Copy
+Edit
+name: John
+age: 25
+city: New York
+4. 🔹 Array .forEach() Method
+Another way to loop through arrays.
+
+javascript
+Copy
+Edit
+const numbers = [10, 20, 30];
+
+numbers.forEach(function(number) {
+  console.log("Value: " + number);
+});
+Output:
+
+makefile
+Copy
+Edit
+Value: 10
+Value: 20
+Value: 30
+🧪 Example with Nested for Loops
+javascript
+Copy
+Edit
+for (let i = 1; i <= 3; i++) {
+  for (let j = 1; j <= 3; j++) {
+    console.log(`${i} x ${j} = ${i * j}`);
+  }
+}
+Output:
+
+python-repl
+Copy
+Edit
+1 x 1 = 1
+1 x 2 = 2
+1 x 3 = 3
+2 x 1 = 2
+...
